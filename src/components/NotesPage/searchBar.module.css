@@ -1,0 +1,49 @@
+.searchBar{
+    display: flex;
+    flex:0.75;
+}
+.searchIconBar{
+    display: flex;
+    flex:0.7;
+    align-items: center;
+}
+.searchIconBar.isActive{
+    /* border: 1px solid black; */
+   border-radius: 5px;
+    box-shadow: 0px 1px 4px 1px rgb(94, 93, 93);
+}
+.searchIconBar> input{
+    font-size: 18px;
+    flex: 1;
+    height: 20px;
+    border: none;
+    outline: none; 
+    background:transparent; 
+}
+
+.syncInactive{
+    color: white;
+    visibility: hidden;
+}
+
+.syncActive{
+    color: white;
+    visibility: visible;
+}
+
+
+@media screen and (max-width: 650px) {
+ .searchIconBar> input{
+    font-size: 14px;
+ }
+}
+@media screen and (max-width: 550px) {
+ .searchIconBar> input{
+    font-size: 12px;
+ }
+}
+@media screen and (max-width: 400px) {
+ .searchIconBar> input{
+    font-size: 10px;
+ }
+}
